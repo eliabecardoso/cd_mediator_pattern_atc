@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mediator Pattern - ATC</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      user-select: none;
+      text-rendering: optimizeLegibility;
+    }
+
+    button {
+      margin: 10px;
+      padding: 5px;
+      background: aliceblue;
+      border-radius: 2px;
+      border: none;
+    }
+
+    button:hover {
+      color: white;
+      background-color: #444;
+    }
+
+    button:disabled {
+      color: white;
+      background-color: #444;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      min-width: 100%;
+    }
+
+    body {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(rgba(125, 30, 170), rgba(50, 170, 150));
+    }
+
+    .controlTower {
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h4>Mediator: Air Traffic Control - ATC</h4>
+  <button id="start" type="button">Start</button>
+  <br />
+</body>
+<script src="./Model/airPlane.js"></script>
+<script src="./Model/controlTower.js"></script>
+<script src="./UI/airPlane.js"></script>
+<script src="./UI/controlTower.js"></script>
+<script src="./index.js"></script>
+
+</html>
